@@ -387,3 +387,4 @@ D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatc
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\MovieWatchLaterWebApp.genruntimeconfig.cache
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\MovieList\Index.cshtml.g.cs
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\MovieList\Create.cshtml.g.cs
+D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\MovieList\Edit.cshtml.g.cs

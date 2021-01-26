@@ -2,3 +2,65 @@
 @model MovieWatchLaterWebApp.Pages.MovieList.EditModel
 
 
+<br />
+<h2 class="text-info">Edit Movie/Show</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Movie.Name"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Movie.Name" class="form-control" />
+            </div>
+            <span asp-validation-for="Movie.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Movie.Genre"></label>
+            </div>
+            <div class="col-6">
+                <select asp-for="Movie.Genre" class="form-control">
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Action">Action</option>
+                    <option value="Romantic Comedy">Romantic Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Animated">Animated</option>
+                    <option value="Sci-fi">Sci-fi</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Movie.Medium"></label>
+            </div>
+            <div class="col-6">
+                <select asp-for="Movie.Medium" class="form-control">
+                    <option value="Movie">Movie</option>
+                    <option value="TV Show">TV Show</option>
+                    <option value="Anime">Anime</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Update" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}
