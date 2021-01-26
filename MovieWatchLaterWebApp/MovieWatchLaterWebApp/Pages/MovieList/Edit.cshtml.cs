@@ -24,5 +24,19 @@ namespace MovieWatchLaterWebApp.Pages.MovieList
         {
             Movie = await _db.Movie.FindAsync(id);
         }
+
+        public async Task<IActionResult> OnPost()
+        {
+            if (ModelState.IsValid)
+            {
+                var MovieFromDb = await _db.Movie.FindAsync(Movie.Id);
+                MovieFromDb.Name = Movie.Name;
+                MovieFromDb.Genre = Movie.Genre;
+                MovieFromDb.Medium = Movie.Medium;
+
+                await _db.SaveChangesAsync();
+            }
+            return RedirectToPage("Index");
+        }
     }
 }
