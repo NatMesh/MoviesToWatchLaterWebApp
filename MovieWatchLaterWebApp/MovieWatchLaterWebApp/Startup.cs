@@ -27,6 +27,8 @@ namespace MovieWatchLaterWebApp
         {
             //This adds the our ApplicationDbContext class to our pipeline and allows us to use it anywhere in our project via dependency injection
             services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //This will allow our project to support API calls
+            services.AddControllersWithViews();
             services.AddRazorPages();
         }
 
@@ -53,6 +55,7 @@ namespace MovieWatchLaterWebApp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
         }
