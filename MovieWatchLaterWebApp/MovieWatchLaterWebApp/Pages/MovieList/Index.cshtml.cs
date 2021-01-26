@@ -27,5 +27,19 @@ namespace MovieWatchLaterWebApp.Pages.MovieList
             //This call to our database retrieves all the Movies from our database
             Movies = await _db.Movie.ToListAsync();
         }
+
+        //Handles the delete request of a movie/show from our list 
+        public async Task<IActionResult> OnPostDelete(int id)
+        {
+            var movie = await _db.Movie.FindAsync(id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+            _db.Movie.Remove(movie);
+            await _db.SaveChangesAsync();
+
+            return RedirectToPage("Index");
+        }
     }
 }
