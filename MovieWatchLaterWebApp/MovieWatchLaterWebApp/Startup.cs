@@ -30,6 +30,11 @@ namespace MovieWatchLaterWebApp
             //This will allow our project to support API calls
             services.AddControllersWithViews();
             services.AddRazorPages();
+            //This sets the default page to our default page on initial load to the Index page in the MovieList folder.
+            services.AddMvc().AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AddPageRoute("/MovieList/Index", "");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

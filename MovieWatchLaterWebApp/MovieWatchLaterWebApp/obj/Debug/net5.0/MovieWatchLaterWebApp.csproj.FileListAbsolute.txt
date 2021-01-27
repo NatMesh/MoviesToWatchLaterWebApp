@@ -371,7 +371,6 @@ D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatc
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\MovieWatchLaterWebApp.TagHelpers.output.cache
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\MovieWatchLaterWebApp.RazorCoreGenerate.cache
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 D:\BIT Term 5\ASP.NET Core MVC Complete Guide\MoviesToWatchLaterWebApp\MovieWatchLaterWebApp\MovieWatchLaterWebApp\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs

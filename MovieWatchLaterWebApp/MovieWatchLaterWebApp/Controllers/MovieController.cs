@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace MovieWatchLaterWebApp.Controllers
 {
+    [Route("api/Movie")]
+    [ApiController]
     public class MovieController : Controller
     {
         private readonly ApplicationDbContext _db;
