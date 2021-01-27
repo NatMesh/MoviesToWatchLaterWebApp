@@ -4,61 +4,61 @@
 <br />
 <div class="container row p-0 m-0">
     <div class="col-9">
-        <h2 class="text-info">Movie List</h2>
+        <h2 class="text-info">Movie/TV Show Watch Later List</h2>
     </div>
     <div class="col-3">
         <a asp-page="Create" class="btn btn-info form-control text-white">Add New Movie/Show</a>
     </div>
+    @*OLD TABLE SUBBED FOR DATATABLE WITH MORE FUNCTIONALITY!*@
+    @* 
+        <div class="col-12 border p-3 mt-3">
+            <form method="post">
+                @if (Model.Movies.Count() > 0)
+                {
+                    <table class="table table-striped border">
+                        <tr class="table-secondary">
+                            <th>
+                                <label asp-for="Movies.FirstOrDefault().Name"></label>
+                            </th>
+                            <th>
+                                <label asp-for="Movies.FirstOrDefault().Genre"></label>
+                            </th>
+                            <th>
+                                <label asp-for="Movies.FirstOrDefault().Medium"></label>
+                            </th>
+                            <th>
 
-    <div class="col-12 border p-3 mt-3">
-        <form method="post">
-            @if (Model.Movies.Count() > 0)
-            {
-                <table class="table table-striped border">
-                    <tr class="table-secondary">
-                        <th>
-                            <label asp-for="Movies.FirstOrDefault().Name"></label>
-                        </th>
-                        <th>
-                            <label asp-for="Movies.FirstOrDefault().Genre"></label>
-                        </th>
-                        <th>
-                            <label asp-for="Movies.FirstOrDefault().Medium"></label>
-                        </th>
-                        <th>
-
-                        </th>
-                    </tr>
-                    @foreach (var item in Model.Movies)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(m => item.Name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.Genre)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.Medium)
-                            </td>
-                            <td>
-                                <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Watched</button>
-                                <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
-                            </td>
+                            </th>
                         </tr>
-                    }
-                </table>
-            }
-            else
-            {
-                <p>No movies available.</p>
-            }
-        </form>
-    </div>
+                        @foreach (var item in Model.Movies)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(m => item.Name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(m => item.Genre)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(m => item.Medium)
+                                </td>
+                                <td>
+                                    <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Watched</button>
+                                    <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                }
+                else
+                {
+                    <p>No movies available.</p>
+                }
+            </form>
+        </div>
+    *@
 
     <div class="col-12" style="text-align:center">
-        <br />
-        <span>OR</span>
         <br />
         <br />
     </div>
